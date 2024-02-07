@@ -7,7 +7,7 @@ public class Main {
 		System.out.println(num1);
 		int nums[] = {10,20,30,40,50};
 		System.out.println(nums[7]);
-		String name = null;
+		String name = "xfftg";
 		System.out.println(name.length());
 		
 	} catch (ArithmeticException ex) {
