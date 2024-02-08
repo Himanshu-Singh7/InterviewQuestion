@@ -1,0 +1,33 @@
+1: Question
+First apporoch
+
+The second maximum salary from the "Employee" table in MySQL, you can use a subquery or a self-join. Here's an example using a subquery:
+
+SELECT Salary
+FROM Employee
+WHERE Salary = (
+    SELECT DISTINCT Salary
+    FROM Employee
+    ORDER BY Salary DESC
+    LIMIT 1 OFFSET 1
+);
+
+Second approch
+
+SELECT MAX(Salary) AS SecondHighestSalary
+FROM Employee
+WHERE Salary < (SELECT MAX(Salary) FROM Employee);
+
+In this query, it finds the maximum salary first, then filters for salaries that are less than that maximum, and finally selects the maximum of those filtered salaries, which would be the second highest salary.
+
+-----------------------------------------------------------------------
+2: Question
+Find the third maximum salary from the "Employee" table in MySQL
+SELECT Salary
+FROM Employee
+WHERE Salary = (
+    SELECT DISTINCT Salary
+    FROM Employee
+    ORDER BY Salary DESC
+    LIMIT 1 OFFSET 2
+);
