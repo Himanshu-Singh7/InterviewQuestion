@@ -2,7 +2,9 @@ package HashMapVsConcurrentHashMap;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-
+//It is a Fail fast iteration.
+//Whereas Fail-fast iterators throw an exception(ConcurrentModificationException) .
+//if the collection is modified while iterating over it.
 public class Main1 {
    public static void main(String[] args) {
 	Map<String,Long> phoneBook = new HashMap<String,Long>();

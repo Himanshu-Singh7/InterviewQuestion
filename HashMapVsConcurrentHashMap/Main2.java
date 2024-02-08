@@ -1,8 +1,10 @@
 package HashMapVsConcurrentHashMap;
+
+// It is a basically Fail safe iteration.
+//Fail-safe iterators means they will not throw any exception even if the collection is modified while iterating over it.
 import java.util.Iterator;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-
 
 public class Main2 {
    public static void main(String[] args) {
