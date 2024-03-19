@@ -17,14 +17,12 @@ public class BarChart {
 	for(int floor = max ; floor >= 1 ; floor--) {
 		for(int i = 0 ; i < arr.length; i++) {
 			if(arr[i] >= floor) {
-				System.out.println("*\t");
+				System.out.print("*");
 			}else {
-				System.out.println("\t");
+				System.out.print(" ");
 			}
 		}
+		System.out.println();
 	}
-	
-	System.out.println();
-	
  }
 }
