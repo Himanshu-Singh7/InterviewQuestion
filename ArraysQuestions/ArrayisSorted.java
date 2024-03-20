@@ -1,5 +1,4 @@
 package ArraysQuestions;
-
 import java.util.*;
 public class ArrayisSorted {
 	public static void main(String[] args) {
