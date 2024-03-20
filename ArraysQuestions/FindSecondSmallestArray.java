@@ -30,7 +30,7 @@ public class FindSecondSmallestArray {
 			arr[i] = scn.nextInt();
 		}
 
-		System.out.println(secondSmallest(arr));
+		System.out.println("Second Smallest : "+secondSmallest(arr));
 
 	}
 }
